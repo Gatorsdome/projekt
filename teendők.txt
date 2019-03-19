@@ -1,0 +1,8 @@
++ Létrehoztam majdnem minden html filet, ami kelleni fog.
++ A ford.html és a toyota.html a kilistázás miatt kell, hogy legyenek "nem kiemelt" hirdetések is.
++ Ha beleírok valami(ideigleneset) a css fájlba, azt a legalján teszem. Felettük írdd a sajátodat, hogy elkülöníthetõ legyen.
+
+Teendõk:
+A sidebar kialakítása, a kép mellé felhozni, és egymás alá tenni a néhány kiemelt jellemzõt.
+Konkrét hirdetésekben kép méretezése, és a táblázatot felhozni a kép mellé. A rövid leírás alattuk legyen, kicsit összehúzva, esetleg sorkizártan.
+Regisztráció kirendezése.
