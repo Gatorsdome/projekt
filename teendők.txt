@@ -6,3 +6,15 @@ Teendõk:
 A sidebar kialakítása, a kép mellé felhozni, és egymás alá tenni a néhány kiemelt jellemzõt.
 Konkrét hirdetésekben kép méretezése, és a táblázatot felhozni a kép mellé. A rövid leírás alattuk legyen, kicsit összehúzva, esetleg sorkizártan.
 Regisztráció kirendezése.
+
+-navbar állandó, regisztráció jobbra, mellé bejelentkezés
+
+-sidebar adatok listába egymás alá, az egész blokkosítva, 5px margó a boxok közé,képek 1px border?
+
+-hirdetések képe bal fent, adatok mellé, azt formázni, leírás alatta sorkizárt, képek animációban váltogatja
+
+-footer: copyright, alap kapcsolati adatok
+
+-Kínálatnál szûrés belerakni, 1 sor (márka, szín, stb.), article-be, css-ben megformázni
+
+-nyomtatási stíluslap a hirdetésekhez
