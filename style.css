@@ -13,19 +13,63 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: blanchedalmond;
 }
 
-nav > a {
+li {
+    float: left;
+}
+
+li a {
+    display: block;
     color: crimson;
     text-decoration: none;
     padding: 15px;
     font-size: xx-large;
+
 }
 
-nav > a:hover {
+li a:hover {
     color: aquamarine;
     text-decoration: none;
+    background-color: #111111;
+}
+
+
+#contact nav .contact > a {
+    pointer-events: none;
+    cursor: default;
+    color: darkgray;
+}
+
+#home nav .home > a {
+    pointer-events: none;
+    cursor: default;
+    color: darkgray;
+}
+
+#offers nav .offers > a {
+    pointer-events: none;
+    cursor: default;
+    color: darkgray;
+}
+
+#registration nav .registration > a {
+    pointer-events: none;
+    cursor: default;
+    color: darkgray;
+}
+
+ul > li.registration {
+    float: right;
 }
 
 section {
@@ -70,20 +114,34 @@ footer {
     text-align: center;
 }
 
+.contactimage {
+    height: 50px;
+}
 
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+}
 
-
-
-
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 600px;
+}
 td {
-	border: 1px black solid;
+    border: 1px black solid;
 }
 
 #sidepics {
-	width: 150px;
+    width: 150px;
 }
+
 #offerpics {
-	width: 300px;
+    width: 300px;
 }
 
 
