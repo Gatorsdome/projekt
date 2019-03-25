@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Regisztráció</title>
+    <title>Kínálat</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body id="offers">
@@ -21,28 +21,28 @@
 </nav>
 <main>
     <section>
-        <form action="index.html" method="post" enctype="multipart/form-data">
+        <h3>Találatok szűkítése</h3>
+        <form id="search_form" action="index.html" method="post" enctype="multipart/form-data">
             <label>Márka <select name="offermarka">
                 <option selected disabled>Válassz!</option>
                 <option value="suzuki"> Suzuki</option>
-                <option value="suzuki"> Opel</option>
-                <option value="suzuki"> Ford</option>
-                <option value="suzuki"> Toyota</option>
-                <option value="suzuki"> Nissan</option>
-            </select>
-                Típus <input type="text" name="tipus" value=""/> </label> <br>
-            Évjárat <input type="number" name="evjarat" value="2019" max="2019" min="1950"/>
-            Minimum ár <input type="text" name="min" maxlength="8"/>
-            Maximum ár <input type="text" name="max" maxlength="8"/>
-            Szín <input type="color" name="szin"/>
+                <option value="opel"> Opel</option>
+                <option value="ford"> Ford</option>
+                <option value="toyota"> Toyota</option>
+                <option value="nissan"> Nissan</option>
+            </select> </label>
+            <label> Típus <input type="text" name="tipus" value=""/></label>
+            <label>Évjárat <input type="number" name="evjarat" value="2019" max="2019" min="1950"/></label>
+            <label>Minimum ár <input type="text" name="min" maxlength="8"/></label>
+            <label>Maximum ár <input type="text" name="max" maxlength="8"/></label>
+            <label>Szín <input type="color" name="szin"/></label><br>
             <input type="submit" value="Keress!"/>
-            </label>
         </form>
         <article>
             <h1><a href="opel.html">Opel Astra G 1.4 2001</a></h1>
             <img class="offerpics" src="kepek/opel/3.jpg">
             <ul>
-                <li>Eladó kisfogyasztású megbízható, szeretett Opel Astra személyautóm!</li>
+                <li>Eladó kisfogyasztású, megbízható, szeretett Opel Astra személyautóm!</li>
                 <li>2001/10</li>
                 <li>244 081 km</li>
                 <li>1388 ccm</li>
@@ -66,7 +66,7 @@
             <h1><a href="suzuki.html">Suzuki Swift 1.3 GLX 2005</a></h1>
             <img class="offerpics" src="kepek/suzuki/3.jpg">
             <ul>
-                <li>Alacsony fogyasztású, olcsón fenttartható kisautó eladó!</li>
+                <li>Alacsony fogyasztású, olcsón fenntartható kisautó eladó!</li>
                 <li>2005/4</li>
                 <li>230 621 km</li>
                 <li>1328 ccm</li>

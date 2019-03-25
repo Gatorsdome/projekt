@@ -5,13 +5,10 @@ body {
     width: 90%;
     background-color: aliceblue;
     margin: auto;
+    font-family: Roboto, sans-serif;
 }
 
-h1 {
-    text-align: center;
-}
-
-header {
+h1, header {
     text-align: center;
 }
 
@@ -20,7 +17,6 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-
 }
 
 #navbar ul {
@@ -41,34 +37,16 @@ header {
     text-decoration: none;
     padding: 15px;
     font-size: xx-large;
-
 }
 
 #navbar li a:hover {
     color: #222222;
-    text-decoration: none;
-
 }
 
 /*menüpontok formázása, ha az adott oldalon vagyunk, nem kattintható a saját magára mutató link*/
-#contact nav .contact > a {
-    pointer-events: none;
-    cursor: default;
-    color: darkgray;
-}
-
-#home nav .home > a {
-    pointer-events: none;
-    cursor: default;
-    color: darkgray;
-}
-
-#offers nav .offers > a {
-    pointer-events: none;
-    cursor: default;
-    color: darkgray;
-}
-
+#contact nav .contact > a,
+#home nav .home > a,
+#offers nav .offers > a,
 #registration nav .registration > a {
     pointer-events: none;
     cursor: default;
@@ -76,15 +54,17 @@ header {
 }
 
 /*regisztráció és login menüpontok jobbra rendezése*/
-#navbar ul > li.registration {
+#navbar ul li.registration {
     float: right;
 }
 
-#navbar ul > li.login {
+#navbar ul li.login {
     float: right;
 }
 
-#navbar input[type=text] {
+/*bejelentkező mezők és gomb*/
+#navbar input[type=text],
+#navbar input[type=password] {
     padding: 6px;
     margin-top: 20px;
     margin-right: 5px;
@@ -92,21 +72,7 @@ header {
     width: 120px;
 }
 
-/*bejelentkező mezők és gomb*/
-#navbar input[type=password] {
-    padding: 6px;
-    margin-top: 20px;
-    font-size: 15px;
-    width: 120px;
-}
-
-#navbar input:focus {
-    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 255, 0.075);
-    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 255, 0.075);
-    box-shadow: 0px 1px 1px rgba(0, 0, 255, 0.075);
-}
-
-button {
+#navbar button {
     display: inline-block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #FFFFFF;
@@ -114,7 +80,6 @@ button {
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #FFFFFF;
     background-color: #000000;
@@ -134,7 +99,6 @@ section {
     float: left;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: Roboto, sans-serif;
 }
 
 #introduction {
@@ -159,7 +123,6 @@ section {
 }
 
 .sidebar_header {
-
     background-color: #eee;
     color: black;
     display: block;
@@ -199,38 +162,50 @@ section {
     text-align: left;
 }
 
-/*kis képernyőn sidebar nincs, menü vertikálissá válik, és nem látszik mindig*/
+/*kínálat oldal*/
 
-@media (max-width: 1100px) {
-    #sidebar {
-        display: none;
-    }
-
-    section {
-        width: 100%;
-        font-size: xx-large;
-    }
-
-    nav {
-        position: relative !important;
-        box-shadow: 0 0 5px #000;
-    }
-
-    #navbar {
-        width: 60%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    nav li {
-        text-align: center;
-        width: 100%;
-        padding: 5px 0;
-        margin: 0;
-        float: none;
-    }
+#search_form {
+    margin: auto;
 }
 
+#search_form input[type=text], input[type=number], select {
+    background: #c0d5f0;
+    width: 120px;
+    border-radius: 7px;
+    padding: 2px;
+}
+
+#search_form input[type=submit] {
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: #eeeeee;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+#search_form input[type=submit]:hover {
+    background: #dddddd;
+    cursor: pointer;
+}
+
+article {
+    margin: 50px auto;
+    width: 50%;
+    border-bottom: black 1px dashed;
+}
+
+article > h1 {
+    text-transform: uppercase;
+}
+
+article > ul {
+    list-style: none;
+    padding: 0;
+}
+
+article > ul > li:first-child {
+    font-weight: bolder;
+}
 
 .offerpics {
     width: 300px;
@@ -248,34 +223,44 @@ section {
     width: 40%;
 }
 
-.offer_description {
-    float: left;
-    width: 90%;
-}
-
 .offer_text {
     text-align: justify;
     font-size: larger;
 }
 
-table {
+.offer_datatable_container table {
     border-collapse: collapse;
     border-radius: 1em;
     overflow: hidden;
 }
 
-th, td {
+.offer_datatable_container table th, td {
     padding: 3px;
     background: #ddd;
     border-bottom: 1px solid white;
 }
 
-th {
+.offer_datatable_container table th {
     background: lightslategrey;
     color: white;
 }
 
+.offer_description {
+    margin-top: 10px;
+    float: left;
+    width: 90%;
+}
+
+/*kapcsolat oldal/*/
+
+.indexfinancial {
+    width: 100%;
+}
+
 /*regisztrációs oldal form*/
+#registration_form {
+    margin-top: 10px;
+}
 
 #registration_form table {
     width: 50%;
@@ -298,19 +283,10 @@ th {
 
 #registration_form input[type=submit] {
     margin-top: 20px;
-    -moz-box-shadow: 0px 1px 0px 0px #fff6af;
-    -webkit-box-shadow: 0px 1px 0px 0px #fff6af;
-    box-shadow: 0px 1px 0px 0px #fff6af;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f0eee2), color-stop(1, #ffab23));
-    background: -moz-linear-gradient(top, #f0eee2 5%, #ffab23 100%);
-    background: -webkit-linear-gradient(top, #f0eee2 5%, #ffab23 100%);
-    background: -o-linear-gradient(top, #f0eee2 5%, #ffab23 100%);
-    background: -ms-linear-gradient(top, #f0eee2 5%, #ffab23 100%);
+    box-shadow: 0 1px 0 0 #fff6af;
     background: linear-gradient(to bottom, #f0eee2 5%, #ffab23 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0eee2', endColorstr='#ffab23', GradientType=0);
     background-color: #f0eee2;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
     border-radius: 6px;
     border: 1px solid #ffaa22;
     display: inline-block;
@@ -320,20 +296,14 @@ th {
     font-weight: bold;
     padding: 6px 24px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #ffee66;
+    text-shadow: 0 1px 0 #ffee66;
 }
 
 #registration_form input[type=submit]:hover {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #f0eee2));
-    background: -moz-linear-gradient(top, #ffab23 5%, #f0eee2 100%);
-    background: -webkit-linear-gradient(top, #ffab23 5%, #f0eee2 100%);
-    background: -o-linear-gradient(top, #ffab23 5%, #f0eee2 100%);
-    background: -ms-linear-gradient(top, #ffab23 5%, #f0eee2 100%);
     background: linear-gradient(to bottom, #ffab23 5%, #f0eee2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#f0eee2', GradientType=0);
     background-color: #ffab23;
 }
-
 
 /*google map formázása a kapcsolat oldalon*/
 .mapouter {
@@ -345,10 +315,11 @@ th {
 }
 
 .gmap_canvas {
+    margin-top: 40px;
     overflow: hidden;
     background: none !important;
-    height: 500px;
-    width: 600px;
+    height: 66%;
+    width: 80%;
 }
 
 footer {
@@ -363,6 +334,43 @@ footer {
     height: 50px;
 }
 
-.indexfinancial{
-	width: 100%;
+/*alap reszponzivitás, kis képernyőn sidebar nincs, menü vertikálissá válik, és nem látszik folyamatosan*/
+
+@media (max-width: 1100px) {
+    #sidebar {
+        display: none;
+    }
+
+    section {
+        width: 100%;
+        font-size: xx-large;
+    }
+
+    header {
+        display: none;
+    }
+
+    #navbar {
+        position: relative !important;
+        box-shadow: 0 0 5px #000;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #navbar ul li a {
+        text-align: center;
+        float: none;
+    }
+
+    #navbar ul li.registration {
+        text-align: center;
+        float: none;
+    }
+
+    #navbar ul li.login {
+        text-align: center;
+        padding: 5px;
+        float: none;
+    }
 }
