@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body id="home">
-<header><img src="kepek\logo.jpg" alt="logo" width="100%" height="172"></header>
+<header><img class="logo" src="kepek/logo.jpg" alt="logo" height="172"></header>
 <nav id="navbar">
     <ul>
         <li class="home"><a href="index.html">Főoldal</a></li>
@@ -18,11 +18,11 @@
         <li class="registration"><a href="registration.html">Regisztráció</a></li>
         <li class="login">
             <form action="index.html" method="post" enctype="multipart/form-data">
-                <label><input type="text" placeholder="Felhasználónév" name="username"/><input type="password"
+                <label><input type="text" placeholder="Felhasználónév" name="username"/></label><input type="password"
                                                                                                placeholder="Jelszó"
                                                                                                name="pw"/>
                     <button type="submit">Bejelentkezés</button>
-                </label>
+
             </form>
         </li>
     </ul>
@@ -31,7 +31,7 @@
 <main>
     <section id="introduction">
         <h1>A szegedi használt autók csapata köszönti önt a weboldalon!</h1>
-        <img class="textwrapleft" src="kepek\index\1.jpg" alt="introduce">
+        <img class="textwrapleft" src="kepek/index/1.jpg" alt="introduce">
         <p>Weboldalunkon több száz használtautó hirdetés közül válogathat, akár magán, akár cégtulajdonból. Cégünk 40
             éves fennállása óta már több, mint egymillió vevőt sikerült eljuttassunk az új autójához! Vállalkozásunk kis
             családi vállalkozásból nőtte ki magát a Dél-Alföld legmeghatározóbb picai szereplőjévé a használtautó
@@ -50,18 +50,18 @@
             értesülhet új ajánlatainkról! Elérhetőségeink bármelyikén forduljon hozzánk bizalommal, mi pedig megháláljuk
             bizalmát!</p>
         <h2>Eladná autóját? Nem bízik a személyes eladásban? Tehernek érzi? Felvásároljuk, majd eladjuk autóját!</h2>
-        <img class="indexfinancial" src="kepek\index\felv.png" alt="introduce">
+        <img class="indexfinancial" src="kepek/index/felv.png" alt="introduce">
         <h2>Nincs meg a kezdőtőkéje az autóvásárláshoz? Nézze meg finanszirozási ajánlatunkat...</h2>
-        <img class="indexfinancial" src="kepek\index\finan.png" alt="introduce">
+        <img class="indexfinancial" src="kepek/index/finan.png" alt="introduce">
         <h2>Ennél is többre vágyik? Lehet, hogy 0% önerővel elviheti az álmai autóját...</h2>
-        <img class="indexfinancial" src="kepek\index\onero.png" alt="introduce">
+        <img class="indexfinancial" src="kepek/index/onero.png" alt="introduce">
     </section>
     <aside id="sidebar">
         <h1 style="text-transform: uppercase">Kiemelt hirdetések</h1>
 
         <div class="sidebar_block">
             <a href="opel.html"><div class="sidebar_header">Opel Astra G 1.4 2001</div></a>
-            <div class="sidepics"><img src="kepek/opel/1.jpg"></div>
+            <div class="sidepics"><img alt="opel" src="kepek/opel/1.jpg"></div>
             <div class="sidedata">
                 <ul>
                     <li class="sidedata_element">2001/10</li>
@@ -74,7 +74,7 @@
         </div>
         <div class="sidebar_block">
             <a href="suzuki.html"><div class="sidebar_header">Suzuki Swift 1.3 GLX 2005</div></a>
-            <div class="sidepics"><img src="kepek/suzuki/1.jpg"></div>
+            <div class="sidepics"><img alt="suzuki" src="kepek/suzuki/1.jpg"></div>
             <div class="sidedata">
                 <ul>
                     <li class="sidedata_element">2005/04</li>
@@ -87,7 +87,7 @@
         </div>
         <div class="sidebar_block">
             <a href="nissan.html"> <div class="sidebar_header">Nissan Qashqai 1.5 2008</div></a>
-            <div class="sidepics"><img src="kepek/nissan/1.jpg"></div>
+            <div class="sidepics"><img alt="nissan" src="kepek/nissan/1.jpg"></div>
             <div class="sidedata">
                 <ul>
                     <li class="sidedata_element">2008/5</li>
