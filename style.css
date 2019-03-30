@@ -128,6 +128,11 @@ section {
 }
 
 /*oldalsáv formázása*/
+
+#sidebar h1 {
+    text-transform: uppercase;
+}
+
 .sidebar_block {
     margin-bottom: 50px;
     float: left;
@@ -254,6 +259,10 @@ section {
     margin: 0 auto;
 }
 
+.offerimage_container img {
+    width: 90%;
+}
+
 .offer_datatable_container {
     float: left;
     width: 40%;
@@ -273,12 +282,12 @@ section {
 .offer_datatable_container table th, td {
     padding: 3px;
     background: #ddd;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .offer_datatable_container table th {
-    background: lightslategrey;
-    color: white;
+    background: #778899;
+    color: #ffffff;
 }
 
 .offer_description {
@@ -307,7 +316,7 @@ section {
 
 #registration_form td {
     width: 50%;
-    background: beige;
+    background: #f5f5dc;
     text-align: left;
     padding: 10px 10px 10px 10px;
     font-size: larger;
@@ -316,27 +325,62 @@ section {
 #registration_form input[type=text]:focus,
 #registration_form input[type=password]:focus,
 #registration_form input[type=email]:focus {
-    background-color: lightblue;
+    background-color: #add8e6;
 }
 
 #registration_form input[type=submit] {
-    margin-top: 20px;
-    background-color: #b8c6df;
-    border-radius: 6px;
-    border: 1px solid #f5f5dc;
+    -moz-box-shadow: 3px 4px 0px 0px #899599;
+    -webkit-box-shadow: 3px 4px 0px 0px #899599;
+    box-shadow: 3px 4px 0px 0px #899599;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+    background: -moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background: -webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background: -o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background: -ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba', GradientType=0);
+    background-color: #ededed;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #d6bcd6;
     display: inline-block;
     cursor: pointer;
-    color: #333333;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
+    color: #3a8a9e;
+    font-size: 17px;
+    padding: 7px 25px;
+    margin: 20px;
     text-decoration: none;
-
+    text-shadow: 0px 1px 0px #e1e2ed;
 }
 
 #registration_form input[type=submit]:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+    background: -moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+    background: -webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+    background: -o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+    background: -ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+    background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed', GradientType=0);
+    background-color: #bab1ba;
+}
 
-    background-color: #ffab23;
+/*kapcsolat*/
+
+.contact_flex {
+    display: flex;
+}
+
+.contact_manager {
+    width: 45%;
+}
+
+.contact_data {
+    width: 30%;
+}
+
+.contactimage {
+    height: 50px;
 }
 
 /*google map formázása a kapcsolat oldalon*/
@@ -365,19 +409,15 @@ footer {
     text-align: center;
 }
 
-.contactimage {
-    height: 50px;
-}
-
 /*alap reszponzivitás, kisebb képernyőn sidebar nincs, menü vertikálissá válik, és nem látszik folyamatosan*/
 
 @media screen and (max-width: 1500px) {
-    .offer_block {
-        width: 40%;
-    }
-
     #navbar input[type=password] {
         width: 50px;
+    }
+
+    .offer_block {
+        width: 40%;
     }
 
     .offerimage_container {
@@ -395,7 +435,7 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
-    #sidebar {
+    header, #sidebar {
         display: none;
     }
 
@@ -404,12 +444,10 @@ footer {
         font-size: xx-large;
     }
 
-    header {
-        display: none;
-    }
-
     #navbar {
         position: relative !important;
+        -moz-box-shadow: 0px 0px 5px #000;
+        -webkit-box-shadow: 0px 0px 5px #000;
         box-shadow: 0px 0px 5px #000;
         width: 100%;
         margin: 0 auto;
@@ -431,5 +469,14 @@ footer {
         padding: 5px;
         float: none;
     }
-}
 
+    .offer_block {
+        width: 100%;
+        height: 700px;
+    }
+
+    .offerpics {
+        width: 30%;
+        height: 30%;
+    }
+}

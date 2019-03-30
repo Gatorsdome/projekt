@@ -33,9 +33,10 @@
                     <td><input type="email" id="email" name="email" value=""/></td>
                 </tr>
                 <tr>
-                    <td><label for="megjelenit">E-mail látható?</label></td>
-                    <td><input type="radio" id="megjelenit" name="megjelenit" value="igen"/>Igen
-                        <input type="radio" name="megjelenit" value="nem"/> Nem
+                    <td><label>E-mail látható?</label></td>
+                    <td>
+                        <input type="radio" id="igen" name="megjelenit" value="igen"/><label for="igen">Igen</label>
+                        <input type="radio" id="nem" name="megjelenit" value="nem"/><label for="nem">Nem</label>
                     </td>
                 </tr>
                 <tr>
@@ -51,11 +52,10 @@
                     <td><input type="date" id="szuldat" name="szuldat" value=""/></td>
                 </tr>
                 <tr>
-                    <td><label>Rövid leírás magadról: </label></td>
-                    <td><textarea name="leiras" rows="8" cols="30"
+                    <td><label for="leiras">Rövid leírás magadról: </label></td>
+                    <td><textarea id="leiras" name="leiras" rows="8" cols="30"
                                   placeholder="- Például miért vagy megbízható eladó?"></textarea>
                 </tr>
-
                 <tr>
                     <td><label for="marka">Preferált márka: </label></td>
                     <td><select id="marka" name="marka">
@@ -77,10 +77,12 @@
         </form>
     </section>
     <aside id="sidebar">
-        <h1 style="text-transform: uppercase">Kiemelt hirdetések</h1>
+        <h1>Kiemelt hirdetések</h1>
 
         <div class="sidebar_block">
-            <a href="opel.html"><div class="sidebar_header">Opel Astra G 1.4 2001</div></a>
+            <a href="opel.html">
+                <div class="sidebar_header">Opel Astra G 1.4 2001</div>
+            </a>
             <div class="sidepics"><img alt="opel" src="kepek/opel/1.jpg"></div>
             <div class="sidedata">
                 <ul>
@@ -93,7 +95,9 @@
             </div>
         </div>
         <div class="sidebar_block">
-            <a href="suzuki.html"><div class="sidebar_header">Suzuki Swift 1.3 GLX 2005</div></a>
+            <a href="suzuki.html">
+                <div class="sidebar_header">Suzuki Swift 1.3 GLX 2005</div>
+            </a>
             <div class="sidepics"><img alt="suzuki" src="kepek/suzuki/1.jpg"></div>
             <div class="sidedata">
                 <ul>
@@ -106,7 +110,9 @@
             </div>
         </div>
         <div class="sidebar_block">
-            <a href="nissan.html"> <div class="sidebar_header">Nissan Qashqai 1.5 2008</div></a>
+            <a href="nissan.html">
+                <div class="sidebar_header">Nissan Qashqai 1.5 2008</div>
+            </a>
             <div class="sidepics"><img alt="nissan" src="kepek/nissan/1.jpg"></div>
             <div class="sidedata">
                 <ul>
